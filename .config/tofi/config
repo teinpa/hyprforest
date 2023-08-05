@@ -1,0 +1,27 @@
+anchor = top
+width = 2550
+height = 32
+horizontal = true
+font-size = 10
+prompt-text = " run: "
+prompt-color = #e69875
+text-color = #a7c080
+selection-color = #d3c6aa
+selection-match-color = #e69875
+
+font = /usr/share/fonts/VictorMono/VictorMonoNerdFontMono-Medium.ttf
+outline-width = 0
+border-width = 3
+background-color = #2d353b
+min-input-width = 60
+result-spacing = 15
+padding-top = 1
+padding-bottom = 1
+padding-left = 2
+padding-right = 2
+
+border-color = #a7c080
+corner-radius = 10
+
+clip-to-padding = true
+margin-top = 10

@@ -1,0 +1,146 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: VictorMono Nerd Font Mono, D2Coding Nerd, "Font Awesome 6 Free";
+    font-weight: Bold;
+    font-size: 13px;
+    min-height: 0;
+    padding: 1px;
+}
+
+window#waybar {
+    background-color: #2d353b;
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: #d3c6aa;
+    border-radius: 8px;
+    /* transition-property: background-color; */
+    /* transition-duration: .5s; */
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #d3c6aa;
+}
+*/
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    /* box-shadow: inset 0 -3px transparent; */
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+/* button:hover { */
+/*     background: inherit; */
+/*     box-shadow: inset 0 -3px #d3c6aa; */
+/* } */
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #d3c6aa;
+}
+
+/* #workspaces button:hover { */
+/*     background: rgba(64, 64, 64, 0.6); */
+/* } */
+
+#workspaces button.active {
+    color: #e69875;
+}
+
+#workspaces button.persistent {
+    color: #425047;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #d3c6aa;
+}
+
+#clock,
+#pulseaudio,
+#wireplumber,
+#tray,
+#window,
+#workspaces{
+    /* margin: 2px; */
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+/* .modules-right > widget:last-child > #workspaces { */
+/*     margin-right: 0; */
+/* } */
+
+#clock {
+    color: #2d353b;
+    background-color: #7fbbb3;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#custom-pacman {
+    color: #2d353b;
+    background-color: #dbbc7f;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#wireplumber {
+    background-color: #f1c40f;
+    color: #000000;
+}
+
+#wireplumber.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#pulseaudio {
+    background-color: #a7c080;
+    color: #2d353b;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#pulseaudio.muted {
+    color: #e67e80;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#tray {
+    /* background-color: #d3c6aa; */
+    /* color: #2d353b; */
+    /* border-radius: 8px; */
+    margin: 2px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+

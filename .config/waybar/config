@@ -1,0 +1,57 @@
+{
+    "layer": "top",
+    "position": "top",
+    "width": 2540,
+    "height": 28,
+    "margin-top": 10,
+    "spacing": 3,
+    "modules-center": ["hyprland/window"],
+    "modules-left": ["wlr/workspaces"],
+    "modules-right": ["tray", "pulseaudio", "custom/pacman", "clock"],
+    "clock": {
+        "format": " {:%I:%M%p} ",
+        "format-alt": " {:%m/%d/%a} "
+    },
+    "custom/pacman": {
+        "format": " PKG {} ",
+        "interval": 60,
+        "on-click": "footclient -e yay",
+        "exec": "checkupdates | wc -l"
+    },
+    "pulseaudio": {
+        "format": " VOL {volume} ",
+        "format-muted": " MUTE ",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5"
+    },
+    "hyprland/window": {
+        "format": " {} ",
+        "separate-outputs": false
+    },
+    "wlr/workspaces" : {
+        "active-only": false,
+        "on-click": "activate",
+        "sort-by-number": true,
+        "format": "{icon}",
+        "format-icons": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "5": "",
+          "active": "",
+          "default": ""
+        },
+        "persistent_workspaces" : {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "tray" : {
+        "icon-size": 16
+    }
+}
