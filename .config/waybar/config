@@ -18,6 +18,11 @@
         "on-click": "footclient -e yay",
         "exec": "checkupdates | wc -l"
     },
+    "custom/ncspot": {
+        "format": " {} ",
+        "max-length": 30,
+        "exec": "/usr/local/bin/mediaplayer.sh --player ncspot"
+    },
     "pulseaudio": {
         "format": " VOL {volume} ",
         "format-muted": " MUTE ",

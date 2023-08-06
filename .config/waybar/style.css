@@ -1,8 +1,8 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: VictorMono Nerd Font Mono, D2Coding Nerd, "Font Awesome 6 Free";
-    font-weight: Bold;
-    font-size: 13px;
+    font-family: Iosevka Nerd Font, D2Coding Nerd, "Font Awesome 6 Free";
+    /* font-weight: Bold; */
+    font-size: 14px;
     min-height: 0;
     padding: 1px;
 }
@@ -91,6 +91,11 @@ button {
     background-color: #7fbbb3;
     border-radius: 5px;
     margin: 2px;
+}
+
+#custom-ncspot {
+    color: #d3c6aa;
+    background-color: transparent;
 }
 
 #custom-pacman {
