@@ -14,10 +14,10 @@ alias zshalias="v ~/.config/slimzsh/aliases.zsh.local"
 alias addtor="transmission-remote -a"
 alias wttr1="curl -s 'wttr.in/Seoul?format=%c+%t\n'"
 alias c="swayimg -n"
-alias spotify="spotify_player"
+# alias spotify="spotify_player"
 # alias duf="duf -only local"
 alias pfetch="clear; pfetch"
-# alias ctp="catcolors.sh"
+alias scrrec="wl-screenrec --audio --low-power=off"
 # alias logins="awk '{print \$1,\$2,\$3}' ~/Documents/logins1.csv"
 
 # git aliases
