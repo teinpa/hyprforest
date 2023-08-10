@@ -5,8 +5,8 @@
     "height": 28,
     "margin-top": 10,
     "spacing": 3,
-    "modules-center": ["hyprland/window"],
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["hyprland/window"],
+    "modules-center": ["wlr/workspaces"],
     "modules-right": ["tray", "pulseaudio", "custom/pacman", "clock"],
     "clock": {
         "format": " {:%I:%M%p} ",
@@ -18,10 +18,11 @@
         "on-click": "footclient -e yay",
         "exec": "checkupdates | wc -l"
     },
-    "custom/ncspot": {
-        "format": " {} ",
-        "max-length": 30,
-        "exec": "/usr/local/bin/mediaplayer.sh --player ncspot"
+    "custom/spotify": {
+        "format": "  {} ",
+        "max-length": 50,
+        "exec": "/home/hooxoo/.config/scripts/mediaplayer.sh",
+        "interval": 5
     },
     "pulseaudio": {
         "format": " VOL {volume} ",
@@ -31,7 +32,7 @@
         "on-scroll-down": "pamixer -d 5"
     },
     "hyprland/window": {
-        "format": " {} ",
+        "format": "   {} ",
         "separate-outputs": false
     },
     "wlr/workspaces" : {
@@ -40,13 +41,13 @@
         "sort-by-number": true,
         "format": "{icon}",
         "format-icons": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-          "5": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "5": "",
           "active": "",
-          "default": ""
+          "default": ""
         },
         "persistent_workspaces" : {
             "1": [],
