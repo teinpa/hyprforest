@@ -1,7 +1,7 @@
 # hyprforest
 
 ## screenshot
-![Screenshot](/Pictures/screenshots/desktop01.png)
+![Screenshot](/Pictures/screenshots/desktop02.png)
 
 ## keybindings  
 | Key-binding | Action  |
