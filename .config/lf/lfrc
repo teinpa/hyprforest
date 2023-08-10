@@ -1,4 +1,5 @@
 set ratios 1:2:3
+set icons true
 
 set previewer ctpv
 set cleaner ctpvclear
@@ -103,5 +104,13 @@ cmd zip ${{
     cp -r $fx $1
     zip -r $1.zip $1
     rm -rf $1
+}}
+
+# use fzf
+map f $vi $(fzf)
+
+# use exa
+cmd on-select &{{
+    lf -remote "send $id set statfmt \"$(exa -ld --color=always "$f")\""
 }}
 
