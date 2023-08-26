@@ -7,7 +7,7 @@ prompt-text = " RUN: "
 prompt-color = #e4609b
 text-color = #f5f5f5
 selection-color = #737373
-selection-match-color = #e4609b
+selection-match-color = #6ee2ff
 
 font = /usr/share/fonts/Iosevka Medium Nerd Font Complete.ttf
 outline-width = 0

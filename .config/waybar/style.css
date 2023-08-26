@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: #18181a;
+    background-color: #131213;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #949494;
     border-radius: 8px;
@@ -47,7 +47,7 @@ button {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #f5f5f5;
+    color: #6ee2ff;
 }
 
 /* #workspaces button:hover { */
@@ -87,7 +87,7 @@ button {
 /* } */
 
 #clock {
-    color: #18181a;
+    color: #131213;
     background-color: #949494;
     border-radius: 5px;
     margin: 2px;
@@ -99,7 +99,7 @@ button {
 }
 
 #custom-pacman {
-    color: #18181a;
+    color: #131213;
     background-color: #949494;
     border-radius: 5px;
     margin: 2px;
@@ -121,7 +121,7 @@ label:focus {
 
 #pulseaudio {
     background-color: #949494;
-    color: #18181a;
+    color: #131213;
     border-radius: 5px;
     margin: 2px;
 }
@@ -135,7 +135,7 @@ label:focus {
 
 #tray {
     /* background-color: #f5f5f5; */
-    /* color: #18181a; */
+    /* color: #131213; */
     /* border-radius: 8px; */
     margin: 2px;
 }

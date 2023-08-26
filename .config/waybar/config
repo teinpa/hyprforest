@@ -9,30 +9,32 @@
     "modules-center": ["wlr/workspaces"],
     "modules-right": ["tray", "pulseaudio", "custom/pacman", "clock"],
     "clock": {
-        "format": " {:%I:%M%p} ",
-        "format-alt": " {:%m/%d/%a} "
+        "format": " <span text_transform=\"uppercase\">{:%a %I:%M%p}</span> ",
+        "format-alt": " {:%m-%d} ",
+        "tooltip-format": "{calendar}"
     },
     "custom/pacman": {
         "format": " PKG {} ",
-        "interval": 60,
+        "interval": 30,
         "on-click": "footclient -e yay",
         "exec": "checkupdates | wc -l"
     },
     "custom/spotify": {
         "format": "  {} ",
-        "max-length": 50,
+        "max-length": 30,
         "exec": "/home/hooxoo/.config/scripts/mediaplayer.sh",
         "interval": 5
     },
     "pulseaudio": {
         "format": " VOL {volume} ",
-        "format-muted": " MUTE ",
+        "format-muted": "MUTE",
         "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5"
+        "on-scroll-up": "vol.sh up",
+        "on-scroll-down": "vol.sh down"
     },
     "hyprland/window": {
         "format": "   {} ",
+        "max-length": 50,
         "separate-outputs": false
     },
     "wlr/workspaces" : {
