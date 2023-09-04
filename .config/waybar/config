@@ -6,7 +6,7 @@
     "margin-top": 10,
     "spacing": 3,
     "modules-left": ["hyprland/window"],
-    "modules-center": ["wlr/workspaces"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["tray", "pulseaudio", "custom/pacman", "clock"],
     "clock": {
         "format": " <span text_transform=\"uppercase\">{:%a %I:%M%p}</span> ",
@@ -27,7 +27,7 @@
     },
     "pulseaudio": {
         "format": " VOL {volume} ",
-        "format-muted": "MUTE",
+        "format-muted": " MUTE ",
         "on-click": "pamixer -t",
         "on-scroll-up": "vol.sh up",
         "on-scroll-down": "vol.sh down"
@@ -37,7 +37,7 @@
         "max-length": 50,
         "separate-outputs": false
     },
-    "wlr/workspaces" : {
+    "hyprland/workspaces" : {
         "active-only": false,
         "on-click": "activate",
         "sort-by-number": true,

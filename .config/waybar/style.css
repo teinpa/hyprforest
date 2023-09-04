@@ -44,6 +44,14 @@ button {
 /*     box-shadow: inset 0 -3px #f5f5f5; */
 /* } */
 
+#workspaces button.persistent {
+    color: #737373;
+}
+
+#workspaces button.active {
+    color: #e4609b;
+}
+
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
@@ -53,14 +61,6 @@ button {
 /* #workspaces button:hover { */
 /*     background: rgba(64, 64, 64, 0.6); */
 /* } */
-
-#workspaces button.active {
-    color: #e4609b;
-}
-
-#workspaces button.persistent {
-    color: #737373;
-}
 
 #mode {
     background-color: #737373;
@@ -127,8 +127,8 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    color: #e67e80;
-    background-color: transparent;
+    color: #131213;
+    background-color: #e4909b;
     border-radius: 5px;
     margin: 2px;
 }
