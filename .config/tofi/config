@@ -1,27 +1,27 @@
 anchor = top
-width = 2550
-height = 32
+width = 2560
+height = 20
 horizontal = true
 font-size = 11
 prompt-text = " RUN: "
-prompt-color = #e4609b
+prompt-color = #6ee2ff
 text-color = #f5f5f5
-selection-color = #737373
+selection-color = #e4609b
 selection-match-color = #6ee2ff
 
-font = /usr/share/fonts/Iosevka Medium Nerd Font Complete.ttf
+font = /usr/share/fonts/M+CodeLat50NerdFont-Medium.ttf
 outline-width = 0
-border-width = 3
-background-color = #18181a
+border-width = 0
+background-color = #121014
 min-input-width = 60
-result-spacing = 15
-padding-top = 1
-padding-bottom = 1
-padding-left = 2
-padding-right = 2
+result-spacing = 25
+padding-top = 0
+padding-bottom = 0
+padding-left = 10
+padding-right = 10
 
 border-color = #e4609b
-corner-radius = 10
+# corner-radius = 10
 
 clip-to-padding = true
-margin-top = 10
+margin-top = 7

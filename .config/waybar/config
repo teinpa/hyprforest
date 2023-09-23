@@ -1,29 +1,42 @@
 {
     "layer": "top",
     "position": "top",
-    "width": 2540,
-    "height": 28,
-    "margin-top": 10,
-    "spacing": 3,
+    "width": 2560,
+    "height": 30,
+    "margin-top": 0,
+    "spacing": 1,
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["tray", "pulseaudio", "custom/pacman", "clock"],
+    "modules-right": ["custom/spotify", "custom/sep", "pulseaudio", "custom/sep", "custom/pacman", "custom/sep", "clock", "custom/sep", "tray"],
     "clock": {
         "format": " <span text_transform=\"uppercase\">{:%a %I:%M%p}</span> ",
-        "format-alt": " {:%m-%d} ",
-        "tooltip-format": "{calendar}"
+        "format-alt": " <span text_transform=\"uppercase\">{:%B.%d}</span> ",
+        "tooltip-format": "{calendar}",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "today": "<span color='#e4609b'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+    "custom/sep": {
+        "format": " ",
+        "interval": "once"
     },
     "custom/pacman": {
         "format": " PKG {} ",
         "interval": 30,
-        "on-click": "footclient -e yay",
+        "on-click": "kitty -e yay",
         "exec": "checkupdates | wc -l"
     },
     "custom/spotify": {
-        "format": "  {} ",
-        "max-length": 30,
+        "format": "  {}  ",
+        "max-length": 50,
         "exec": "/home/hooxoo/.config/scripts/mediaplayer.sh",
-        "interval": 5
+        "interval": 5,
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl previous",
+        "on-scroll-down": "playerctl next"
     },
     "pulseaudio": {
         "format": " VOL {volume} ",
@@ -33,8 +46,8 @@
         "on-scroll-down": "vol.sh down"
     },
     "hyprland/window": {
-        "format": "   {} ",
-        "max-length": 50,
+        "format": "    {}",
+        "max-length": 80,
         "separate-outputs": false
     },
     "hyprland/workspaces" : {
@@ -51,7 +64,7 @@
           "active": "",
           "default": ""
         },
-        "persistent_workspaces" : {
+        "persistent-workspaces" : {
             "1": [],
             "2": [],
             "3": [],
@@ -60,6 +73,6 @@
         }
     },
     "tray" : {
-        "icon-size": 16
+        "icon-size": 15
     }
 }

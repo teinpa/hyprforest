@@ -19,7 +19,7 @@ setopt NO_NOMATCH
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#737373,bg:#131213,spinner:#d5d5d5,hl:#e4609b \
 --color=fg:#d5d5d5,header:#ffffff,info:#e4609b,pointer:#ffffff \
---color=marker:#e4609b,fg+:#212121,prompt:#47bac0,hl+:#ffffff"
+--color=marker:#e4609b,fg+:#212121,prompt:#6ee2ff,hl+:#ffffff"
 
 export CLICOLOR=1
 

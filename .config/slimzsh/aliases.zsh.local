@@ -9,6 +9,7 @@ alias clean="yay -Yc"
 # convinience #
 alias ls="exa --group-directories-first --icons -la"
 alias v="nvim"
+alias hyprpicker="hyprpicker -a"
 # alias z="zathura"
 alias zshalias="v ~/.config/slimzsh/aliases.zsh.local"
 alias addtor="transmission-remote -a"

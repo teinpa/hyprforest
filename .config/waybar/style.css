@@ -1,17 +1,20 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Iosevka Nerd Font, D2Coding Nerd, "Font Awesome 6 Free";
+    /* font-family: Iosevka Nerd Font, D2Coding Nerd, "Font Awesome 6 Free"; */
+    /* font-family: Mononoki Nerd Font, D2Coding Nerd, "Font Awesome 6 Free"; */
+    font-family: M\+CodeLat50 Nerd Font Medium, D2Coding Nerd, "Font Awesome 6 Free";
     /* font-weight: Bold; */
     font-size: 14px;
     min-height: 0;
-    padding: 1px;
+    /* padding: 1.5px; */
 }
 
 window#waybar {
-    background-color: #131213;
+    /* background-color: #282828; */
+    background-color: transparent;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    color: #949494;
-    border-radius: 8px;
+    color: #f5f5f5;
+    border-radius: 10px;
     /* transition-property: background-color; */
     /* transition-duration: .5s; */
 }
@@ -34,7 +37,7 @@ button {
     /* box-shadow: inset 0 -3px transparent; */
     /* Avoid rounded borders under each button name */
     border: none;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     background-color: transparent;
 }
 
@@ -44,18 +47,29 @@ button {
 /*     box-shadow: inset 0 -3px #f5f5f5; */
 /* } */
 
+#workspaces.button {
+    padding: 0px 5px;
+    color: #6ee2ff;
+}
+
 #workspaces button.persistent {
+    padding: 0px 5px;
+    color: #6ee2ff;
+}
+
+#workspaces button.empty {
+    padding: 0px 5px;
     color: #737373;
 }
 
-#workspaces button.active {
-    color: #e4609b;
+#workspaces button.visible {
+    padding: 0px 5px;
+    color: #6ee2ff;
 }
 
-#workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #6ee2ff;
+#workspaces button.active {
+    padding: 0px 5px;
+    color: #e4609b;
 }
 
 /* #workspaces button:hover { */
@@ -78,7 +92,7 @@ button {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+    margin-left: 0px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -87,22 +101,33 @@ button {
 /* } */
 
 #clock {
-    color: #131213;
-    background-color: #949494;
+    /* color: #282828; */
+    color: #f5f5f5;
+    /* background-color: #d3869b; */
+    background-color: transparent;
     border-radius: 5px;
-    margin: 2px;
+    margin: 3px;
+}
+
+#custom-sep {
+    color: #737373;
+    /* color: #928374; */
 }
 
 #custom-spotify {
     color: #f5f5f5;
+    /* color: #d3869b; */
+    /* color: #928374; */
     background-color: transparent;
 }
 
 #custom-pacman {
-    color: #131213;
-    background-color: #949494;
+    background-color: transparent;
+    /* background-color: #d79921; */
+    color: #f5f5f5;
+    /* color: #282828; */
     border-radius: 5px;
-    margin: 2px;
+    margin: 3px;
 }
 
 label:focus {
@@ -120,24 +145,28 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #949494;
-    color: #131213;
+    background-color: transparent;
+    /* background-color: #b8bb26; */
+    color: #f5f5f5;
+    /* color: #282828; */
     border-radius: 5px;
-    margin: 2px;
+    margin: 3px;
 }
 
 #pulseaudio.muted {
-    color: #131213;
-    background-color: #e4909b;
+    background-color: transparent;
+    /* background-color: #fb4934; */
+    color: #ec0034;
+    /* color: #282828; */
     border-radius: 5px;
-    margin: 2px;
+    margin: 3px;
 }
 
 #tray {
     /* background-color: #f5f5f5; */
-    /* color: #131213; */
+    /* color: #282828; */
     /* border-radius: 8px; */
-    margin: 2px;
+    margin: 1px 10px 3px 3px;
 }
 
 #tray > .passive {
